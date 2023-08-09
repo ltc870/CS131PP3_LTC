@@ -1,8 +1,8 @@
 package linkedlist;
 
 /**
- * This class models a Node object which contains Strings. Each
- * node has its internal data (a String) and pointers to the next
+ * This class models a Node object which contains Generic objects. Each
+ * node has its internal data (an object) and pointers to the next
  * node in the list.
  * 
  * @author rkelley/njohnson/lcaudle
