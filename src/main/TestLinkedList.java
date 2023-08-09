@@ -8,7 +8,6 @@ public class TestLinkedList {
 	public static void main(String[] args) {
 
 		GenericLinkedList<String> myStringList = new GenericLinkedList<String>();
-
 		GenericNode<String> aStringNode = new GenericNode<String>();
 		aStringNode.setData("String");
 		myStringList.addNode(aStringNode);
@@ -23,12 +22,12 @@ public class TestLinkedList {
 		} while (tempStringNode != null);
 
 		GenericLinkedList<Integer> myIntList = new GenericLinkedList<Integer>();
-		GenericNode<Integer> aIntNode = new GenericNode<Integer>();
-		aIntNode.setData(30);
-		myIntList.addNode(aIntNode);
-		aIntNode = new GenericNode<Integer>();
-		aIntNode.setData(40);
-		myIntList.addNode(aIntNode);
+		GenericNode<Integer> anIntNode = new GenericNode<Integer>();
+		anIntNode.setData(30);
+		myIntList.addNode(anIntNode);
+		anIntNode = new GenericNode<Integer>();
+		anIntNode.setData(40);
+		myIntList.addNode(anIntNode);
 
 		GenericNode<Integer> tempIntNode = myIntList.getList();
 		do {
@@ -36,6 +35,19 @@ public class TestLinkedList {
 			tempIntNode = tempIntNode.getNextNode();
 		} while (tempIntNode != null);
 
+		GenericLinkedList<Double> myDoubleList = new GenericLinkedList<Double>();
+		GenericNode<Double> aDoubleNode = new GenericNode<Double>();
+		aDoubleNode.setData(30.25);
+		myDoubleList.addNode(aDoubleNode);
+		aDoubleNode = new GenericNode<Double>();
+		aDoubleNode.setData(50.50);
+		myDoubleList.addNode(aDoubleNode);
+
+		GenericNode<Double> tempDoubleNode = myDoubleList.getList();
+		do {
+			System.out.println(tempDoubleNode.getData());
+			tempDoubleNode = tempDoubleNode.getNextNode();
+		} while (tempDoubleNode != null);
 	}// end main
 
 }// end class
